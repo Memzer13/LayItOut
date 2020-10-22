@@ -1,8 +1,11 @@
+/*********************************BODY***************************************/
 body {
   margin: 0;
   font-size: 20px;
 }
 
+/*********************************BODY***************************************/
+/*********************************JUMBO**************************************/
 .jumbo {
   background: url(bike.jpg) no-repeat center;
   background-repeat: no-repeat;
@@ -20,6 +23,21 @@ body {
   width: 100%;
 }
 
+@media screen and (max-width: 769px) {
+  div.jumbo {
+    display: none;
+  }
+  div.btmbox {
+    background: rgba(3, 0, 155, 0.1);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  div.jumbo1 {
+    display: none;
+  }
+}
+
 .jumboheader {
   cursor: default;
   color: white;
@@ -30,12 +48,16 @@ body {
       grid-template-rows: 100vh;
   height: 100vh;
   width: 100%;
-  padding-top: 55vh;
+  padding-top: 70vh;
   font-family: 'Poiret One', cursive;
   font-size: 5rem;
   font-weight: bolder;
+  background: url(red.png) no-repeat center;
+  background-size: 40%;
 }
 
+/*********************************JUMBO**************************************/
+/*********************************IMG CONTAINER******************************/
 .grid-container1 {
   display: -ms-grid;
   display: grid;
@@ -46,7 +68,6 @@ body {
   gap: 0px 0px;
 }
 
-/*******************************************************************************************************************/
 .linkbox {
   display: -ms-grid;
   display: grid;
@@ -60,7 +81,6 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
 }
 
-/************************************************************************************************/
 .container3 {
   position: relative;
   width: 100%;
@@ -94,7 +114,7 @@ body {
 }
 
 .text {
-  color: black;
+  color: #001b6d;
   width: 100%;
   position: absolute;
   top: 40%;
@@ -104,6 +124,8 @@ body {
   text-align: center;
 }
 
+/*********************************IMG CONTAINER******************************/
+/*********************************FOOTER*************************************/
 footer {
   background: rgba(3, 0, 155, 0.1);
 }
@@ -194,33 +216,19 @@ li {
   margin-right: 30px;
 }
 
-/*************************************************MEDIA QUERIES***************************/
+/*********************************FOOTER*************************************/
+/*********************************FOOTER*QUERIES*****************************/
 @media screen and (max-width: 800px) {
   div.grid-container2 {
     display: none;
   }
-  div.grid-container4 {
+  div.btmbox {
     width: 100%;
   }
 }
 
 @media screen and (min-width: 800px) {
   div.grid-container4 {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 769px) {
-  div.jumbo {
-    display: none;
-  }
-  div.btmbox {
-    background: rgba(3, 0, 155, 0.1);
-  }
-}
-
-@media screen and (min-width: 769px) {
-  div.jumbo1 {
     display: none;
   }
 }
