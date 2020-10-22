@@ -33,7 +33,7 @@ body {
   padding-top: 55vh;
   font-family: 'Poiret One', cursive;
   font-size: 5rem;
-  font-weight: 1000;
+  font-weight: bolder;
 }
 
 .grid-container1 {
@@ -56,12 +56,6 @@ body {
   padding-top: 2rem;
   padding-bottom: 2rem;
   grid-gap: 10px;
-  margin-left: 0px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  justify-items: center;
-  margin-right: 0px;
   -ms-grid-columns: minmax(250px, 2fr) [auto-fill];
   grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
 }
@@ -115,10 +109,6 @@ footer {
 }
 
 .grid-container2 {
-  -ms-grid-columns: (1fr)[12];
-      grid-template-columns: repeat(12, 1fr);
-  -ms-grid-rows: 0.5fr 0.5fr 0.5fr 2.7fr;
-      grid-template-rows: 0.5fr 0.5fr 0.5fr 2.7fr;
   text-align: center;
   margin-left: 35px;
   margin-right: 35px;
@@ -127,20 +117,8 @@ footer {
 }
 
 .grid-container4 {
-  -ms-grid-columns: (1fr)[12];
-      grid-template-columns: repeat(12, 1fr);
-  -ms-grid-rows: 0.5fr 0.5fr 0.5fr 2.7fr;
-      grid-template-rows: 0.5fr 0.5fr 0.5fr 2.7fr;
   text-align: center;
   opacity: 1;
-}
-
-.ftrbox {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 12;
-  grid-area: 1 / 1 / 4 / 13;
 }
 
 .hdrbox {
@@ -173,6 +151,9 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .btmbox {
@@ -186,6 +167,9 @@ footer {
   display: inline-flex;
   padding-top: 5px;
   float: right;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .bottomline {
@@ -210,14 +194,17 @@ li {
   margin-right: 30px;
 }
 
-/*************************************************MEDIA QUERRIES***************************/
-@media screen and (max-width: 600px) {
+/*************************************************MEDIA QUERIES***************************/
+@media screen and (max-width: 800px) {
   div.grid-container2 {
     display: none;
   }
+  div.grid-container4 {
+    width: 100%;
+  }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   div.grid-container4 {
     display: none;
   }
