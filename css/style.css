@@ -223,7 +223,7 @@ li {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 769px) {
   div.jumbo {
     display: none;
   }
@@ -232,7 +232,7 @@ li {
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 769px) {
   div.jumbo1 {
     display: none;
   }
