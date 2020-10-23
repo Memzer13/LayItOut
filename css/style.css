@@ -7,7 +7,7 @@ body {
 /*********************************BODY***************************************/
 /*********************************JUMBO**************************************/
 .jumbo {
-  background: url(bike.jpg) no-repeat center;
+  background: url(bike1.jpg) no-repeat center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -48,12 +48,10 @@ body {
       grid-template-rows: 100vh;
   height: 100vh;
   width: 100%;
-  padding-top: 70vh;
+  padding-top: 50vh;
   font-family: 'Poiret One', cursive;
   font-size: 5rem;
   font-weight: bolder;
-  background: url(red.png) no-repeat center;
-  background-size: 40%;
 }
 
 /*********************************JUMBO**************************************/
